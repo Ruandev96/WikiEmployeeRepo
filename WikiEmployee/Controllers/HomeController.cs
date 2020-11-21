@@ -10,6 +10,7 @@ using WikiEmployee.Models;
 
 namespace WikiEmployee.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

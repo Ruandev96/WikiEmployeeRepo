@@ -18,13 +18,13 @@ namespace WikiEmployee.Models
         public string EmployeeCount { get; set; }
         public string EmployeeNumber { get; set; }
         public string EnvironmentSatisfaction { get; set; }
-        //[DisplayName("Gender")]
+        [DisplayName("Gender")]
         public string Gender { get; set; }
         public string HourlyRate { get; set; }
         public string JobInvolvement { get; set; }
         public string JobLevel { get; set; }
         public string JobRole { get; set; }
-        //[DisplayName("Job Satisfaction")]
+        [DisplayName("Job Satisfaction")]
         public string JobSatisfaction { get; set; }
         public string MaritalStatus { get; set; }
         public string MonthlyIncome { get; set; }

@@ -15,10 +15,10 @@ namespace WikiEmployee.Models
         }
 
         public string Id { get; set; }
-        //[Required, StringLength(50, MinimumLength = 2)]
+        [Required, StringLength(50, MinimumLength = 2)]
         public string UserName { get; set; }
         public string NormalizedUserName { get; set; }
-        //[Required, EmailAddress, StringLength(100)]
+        [Required, EmailAddress, StringLength(100)]
         public string Email { get; set; }
         public string NormalizedEmail { get; set; }
         public bool EmailConfirmed { get; set; }
