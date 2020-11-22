@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace WikiEmployee.Models
 {
     public partial class WikiEmployeeData
     {
+        [Required]
         public string Age { get; set; }
-
         public string Attrition { get; set; }
         public string BusinessTravel { get; set; }
         public string DailyRate { get; set; }
@@ -16,6 +17,7 @@ namespace WikiEmployee.Models
         public string Education { get; set; }
         public string EducationField { get; set; }
         public string EmployeeCount { get; set; }
+        [Required]
         public string EmployeeNumber { get; set; }
         public string EnvironmentSatisfaction { get; set; }
         [DisplayName("Gender")]

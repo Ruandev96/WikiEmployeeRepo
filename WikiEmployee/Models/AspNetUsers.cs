@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace WikiEmployee.Models
@@ -22,6 +23,7 @@ namespace WikiEmployee.Models
         public string Email { get; set; }
         public string NormalizedEmail { get; set; }
         public bool EmailConfirmed { get; set; }
+        [DisplayName("Password")]
         public string PasswordHash { get; set; }
         public string SecurityStamp { get; set; }
         public string ConcurrencyStamp { get; set; }
